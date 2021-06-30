@@ -6,17 +6,18 @@ body {
 }
 
 img {
-    position: relative;
+    position: absolute;
     width: 100px;
 }
 
 .reboteV {
     position: absolute;
-    animation: reboteVertical 1.05s ease-in 0s infinite alternate;
+    animation: reboteVertical 1.07s ease-in 0s infinite alternate;
+
 }
 
 .reboteH {
-    animation: reboteHorizontal 3.14s cubic-bezier(0.25, 0.25, 0.37, 0.33) 0.005s infinite alternate;
+    animation: reboteHorizontal 3.13s cubic-bezier(0.25, 0.25, 0.37, 0.33) 0.005s infinite alternate;
 }
 
 @keyframes reboteVertical {
@@ -24,7 +25,7 @@ img {
         transform: translateY(20px);
     }
     to {
-        transform: translateY(calc(100vh - 12vmin)) scaleX(0.9) scaleY(1.2);
+        transform: translateY(calc(100vh - 10vmin)) scaleX(0.9) scaleY(1.2);
     }
 }
 
@@ -33,6 +34,6 @@ img {
         transform: translateX(0px);
     }
     to {
-        transform: translateX(calc(100vw - 12vmin));
+        transform: translateX(calc(100vw - 9vmin));
     }
 }
